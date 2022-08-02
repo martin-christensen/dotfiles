@@ -1,9 +1,9 @@
 [user]
-	name = Lars Kappert
-	email = lars@webpro.nl
+	name = Martin Hjorth Christensen
+	email = martin@diwe.dk
 
 [github]
-	user = webpro
+	user = martin-christensen
 
 [core]
 	excludesfile = ~/.config/git/ignore
