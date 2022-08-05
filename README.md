@@ -51,7 +51,7 @@ This will clone or download, this repo to `~/.dotfiles` depending on the availab
 1. Alternatively, clone manually into the desired location:
 
 ```bash
-git clone https://github.com/martin-christensen/dotfiles.git ~/.dotfiles
+git clone git@github.com:martin-christensen/dotfiles.git ~/.dotfiles
 ```
 
 Use the [Makefile](./Makefile) to install everything [listed above](#package-overview), and symlink [runcom](./runcom)
