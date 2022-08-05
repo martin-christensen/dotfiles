@@ -34,7 +34,7 @@ ifndef GITHUB_ACTION
 	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 endif
 
-packages: brew-packages cask-apps node-packages rust-packages
+packages: brew-packages cask-apps node-packages rust-packages composer-packages
 
 link: stow-$(OS)
 	for FILE in $$(\ls -A runcom); do if [ -f $(HOME)/$$FILE -a ! -h $(HOME)/$$FILE ]; then \
@@ -82,13 +82,16 @@ ruby: brew
 rust: brew
 	brew install rust
 
+composer: brew
+	is-executable composer || brew install composer
+
 brew-packages: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Brewfile || true
 
 cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile || true
 	defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
-	for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
+	for EXT in $$(cat install/Codefile); do codium --install-extension $$EXT; done
 	xattr -d -r com.apple.quarantine ~/Library/QuickLook
 
 node-packages: npm
@@ -96,6 +99,9 @@ node-packages: npm
 
 rust-packages: rust
 	cargo install $(shell cat install/Rustfile)
+
+composer-packages: composer
+	composer global require $(shell cat install/composerfile)
 
 test:
 	eval $$(fnm env); bats test

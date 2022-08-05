@@ -33,7 +33,7 @@ It mainly targets macOS systems, but it works on at least Ubuntu as well.
 On a sparkling fresh installation of macOS:
 
 ```bash
-sudo softwareupdate -i -a
+sudo softwareupdate -i -a --install-rosetta
 xcode-select --install
 ```
 
@@ -67,8 +67,14 @@ The installation process in the Makefile is tested on every push and every week 
 
 ## Post-Installation
 
+- Terminal.app
+  - Import the profile `./macos/Tomorrow Night Blue.terminal`
 - `dot dock` (set [Dock items](./macos/dock.sh))
 - `dot macos` (set [macOS defaults](./macos/defaults.sh))
+- Dory
+  - `ln -s ~/.dotfiles/config/dory/.dory.yml ~`
+  - `dory up`
+  - `docker update --restart=always $CONTAINER_IDS` for the dory containers, so its ensured that they will start up on a machine restart
 - Mackup
   - Log in to Dropbox (and wait until synced)
   - `ln -s ~/.config/mackup/.mackup.cfg ~` (until [#632](https://github.com/lra/mackup/pull/632) is fixed)
@@ -83,7 +89,7 @@ Usage: dot <command>
 Commands:
     clean            Clean up caches (brew, npm, gem, rvm)
     dock             Apply macOS Dock settings
-    edit             Open dotfiles in IDE (code) and Git GUI (stree)
+    edit             Open dotfiles in IDE (codium) and Git GUI (stree)
     help             This help message
     macos            Apply macOS system defaults
     test             Run tests
