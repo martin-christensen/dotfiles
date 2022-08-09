@@ -11,6 +11,8 @@ alias cask="brew cask"
 alias chrome="open -a ~/Applications/Google\ Chrome.app"
 alias canary="open -a ~/Applications/Google\ Chrome\ Canary.app"
 
+alias icons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources"
+
 # Exclude macOS specific files in ZIP archives
 
 alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"

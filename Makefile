@@ -34,7 +34,7 @@ ifndef GITHUB_ACTION
 	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 endif
 
-packages: brew-packages cask-apps node-packages rust-packages composer-packages
+packages: brew-packages cask-apps macos-apps node-packages rust-packages composer-packages
 
 link: stow-$(OS)
 	for FILE in $$(\ls -A runcom); do if [ -f $(HOME)/$$FILE -a ! -h $(HOME)/$$FILE ]; then \
@@ -93,6 +93,10 @@ cask-apps: brew
 	defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
 	for EXT in $$(cat install/Codefile); do codium --install-extension $$EXT; done
 	xattr -d -r com.apple.quarantine ~/Library/QuickLook
+
+macos-apps: brew
+	is-executable mas || brew install mas
+	while read -r APP; do APP=$$(sed 's/#.*//' <<< $$APP); mas install $$APP; done < install/masfile
 
 node-packages: npm
 	eval $$(fnm env); npm install -g $(shell cat install/npmfile)
