@@ -67,8 +67,6 @@ The installation process in the Makefile is tested on every push and every week 
 
 ## Post-Installation
 
-- Terminal.app
-  - Import the profile `./macos/Tomorrow Night Blue.terminal`
 - `dot dock` (set [Dock items](./macos/dock.sh))
 - `dot macos` (set [macOS defaults](./macos/defaults.sh))
 - Dory

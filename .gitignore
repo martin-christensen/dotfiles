@@ -1,3 +1,4 @@
 system/.custom
 system/.exports
+__pycache__
 install/*.lock.json
