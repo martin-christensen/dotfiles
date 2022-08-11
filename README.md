@@ -77,6 +77,7 @@ The installation process in the Makefile is tested on every push and every week 
   - Log in to Dropbox (and wait until synced)
   - `ln -s ~/.config/mackup/.mackup.cfg ~` (until [#632](https://github.com/lra/mackup/pull/632) is fixed)
   - `mackup restore`
+- Want to custimize the vscode terminal theme? Checkout [Base16 Terminal Colors Generator](https://glitchbone.github.io/vscode-base16-term/#/)
 
 ## The `dotfiles` command
 
