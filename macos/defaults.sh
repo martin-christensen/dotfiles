@@ -528,6 +528,13 @@ defaults write com.apple.commerce AutoUpdate -bool true
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
 ###############################################################################
+# Various                                                                     #
+###############################################################################
+
+# Fix missing symlink (Not ideal, but does the job)
+sudo touch /System/Volumes/Data/.VolumeIcon.icns
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 

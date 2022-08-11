@@ -34,7 +34,7 @@ ifndef GITHUB_ACTION
 	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 endif
 
-packages: brew-packages cask-apps macos-apps node-packages rust-packages composer-packages
+packages: brew-packages cask-apps macos-apps remote-dmg node-packages rust-packages composer-packages
 
 link: stow-$(OS)
 	for FILE in $$(\ls -A runcom); do if [ -f $(HOME)/$$FILE -a ! -h $(HOME)/$$FILE ]; then \
@@ -97,6 +97,10 @@ cask-apps: brew
 macos-apps: brew
 	is-executable mas || brew install mas
 	while read -r APP; do APP=$$(sed 's/#.*//' <<< $$APP); mas install $$APP; done < install/masfile
+
+remote-dmg:
+	is-executable install-dmg
+	while read -r DMG; do DMG=$$(sed 's/#.*//' <<< $$DMG); install-dmg $$DMG; done < install/remotedmgfile
 
 node-packages: npm
 	eval $$(fnm env); npm install -g $(shell cat install/npmfile)
