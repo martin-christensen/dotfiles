@@ -1,3 +1,4 @@
 laravel/valet
+squizlabs/php_codesniffer=*
 mglaman/drupal-check
-squizlabs/php_codesniffer
+drupal/coder
