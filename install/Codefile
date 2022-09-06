@@ -27,6 +27,8 @@ skippednote.vs-code-drupal
 andrewdavidblum.drupal-smart-snippets
 amiralizadeh9480.laravel-extra-intellisense
 ikappas.phpcs
+junstyle.php-cs-fixer
+bmewburn.vscode-intelephense-client
 dbaeumer.vscode-eslint
 mgmcdermott.vscode-language-babel
 christian-kohler.npm-intellisense

@@ -40,6 +40,7 @@
 [alias]
 	amend = commit --amend --reuse-message=HEAD
 	br = branch
+	bp = "!git fetch -p && for b in $(git for-each-ref --format='%(if:equals=[gone])%(upstream:track)%(then)%(refname:short)%(end)' refs/heads); do git branch -d $b; done"
 	ci = commit
 	co = checkout
 	contrib = shortlog --summary --numbered
