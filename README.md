@@ -18,7 +18,7 @@ It mainly targets macOS systems, but it works on at least Ubuntu as well.
   Action](./.github/workflows/ci.yml)
 - Supports both Apple Silicon (M1) and Intel chips
 
-## Packages Overview
+## Package Overview
 
 - [Homebrew](https://brew.sh) (packages: [Brewfile](./install/Brewfile))
 - [homebrew-cask](https://github.com/Homebrew/homebrew-cask) (packages: [Caskfile](./install/Caskfile))
@@ -71,6 +71,7 @@ The installation process in the Makefile is tested on every push and every week 
 - `dot macos` (set [macOS defaults](./macos/defaults.sh))
 - Dory
   - `ln -s ~/.dotfiles/config/dory/.dory.yml ~`
+  - `ln -s ~/.dotfiles/config/dory/cert ~/.dory_cert`
   - `dory up`
   - `docker update --restart=always $CONTAINER_IDS` for the dory containers, so its ensured that they will start up on a machine restart
 - Mackup

@@ -27,7 +27,7 @@ dory:
     enabled: true
     container_name: dory_dinghy_http_proxy
     https_enabled: true
-    ssl_certs_dir: ''  # leave as empty string to use default certs
+    ssl_certs_dir: '~/.dory_cert'  # leave as empty string to use default certs
     port: 80           # port 80 is default for http
     tls_port: 443      # port 443 is default for https
     image: tripox/dory-http-proxy:latest
