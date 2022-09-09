@@ -1,1 +1,3 @@
-https://download.garmin.com/omt/express/GarminExpress.dmg # Garmin Express
+# Install DMG from remote URL. Add an URL per line, optional to
+# end the line with a comment about the DMG.
+# https://download.garmin.com/omt/express/GarminExpress.dmg # Garmin Express

@@ -103,7 +103,7 @@ macos-apps: brew
 
 remote-dmg:
 	is-executable install-dmg
-	while read -r DMG; do DMG=$$(sed 's/#.*//' <<< $$DMG); install-dmg $$DMG; done < install/remotedmgfile
+	while read -r DMG; do DMG=$$(sed 's/#.*//' <<< $$DMG); if [[ ! -z "$$DMG" ]]; then install-dmg $$DMG; fi; done < install/remotedmgfile
 
 node-packages: npm
 	eval $$(fnm env); npm install -g $(shell cat install/npmfile)
