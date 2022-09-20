@@ -35,4 +35,3 @@ dory:
     enabled: true
     nameserver: 127.0.0.1
     port: 53  # port where the nameserver listens. On linux it must be 53
-      
