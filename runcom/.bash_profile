@@ -44,3 +44,8 @@ unset CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 export DOTFILES_DIR
 
 eval "$(thefuck --alias)"
+
+# pnpm
+export PNPM_HOME="/Users/martin/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
