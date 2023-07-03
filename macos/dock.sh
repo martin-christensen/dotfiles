@@ -14,6 +14,7 @@ dockutil --no-restart --add "/Applications/VSCodium.app"
 dockutil --no-restart --add "/Applications/Sourcetree.app"
 dockutil --no-restart --add "/Applications/Sequel Ace.app"
 dockutil --no-restart --add "/Applications/TablePlus.app"
+dockutil --no-restart --add "/Applications/RedisInsight.app"
 dockutil --no-restart --add "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app"
 dockutil --no-restart --add "/System/Applications/Utilities/Terminal.app"
 dockutil --no-restart --add "/Applications/Postman.app"
@@ -24,7 +25,7 @@ dockutil --no-restart --add "/Applications/Toggl Track.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/Google Photos.app"
 dockutil --no-restart --add "/System/Applications/App Store.app"
-dockutil --no-restart --add "/System/Applications/System Preferences.app"
+dockutil --no-restart --add "/System/Applications/System Settings.app"
 dockutil --no-restart --add "~/Downloads" --view grid --display folder --sort dateadded --section others
 
 killall Dock
