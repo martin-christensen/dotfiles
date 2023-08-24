@@ -17,7 +17,7 @@ fi
 
 # Make utilities available
 
-PATH="$DOTFILES_DIR/bin:$PATH"
+PATH="$DOTFILES_DIR/bin:/opt/homebrew/sbin:$PATH"
 
 # Source the dotfiles (order matters)
 
@@ -48,4 +48,4 @@ eval "$(thefuck --alias)"
 # pnpm
 export PNPM_HOME="/Users/martin/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
-# pnpm end
+# pnpm endexport PATH="/opt/homebrew/sbin:$PATH"
