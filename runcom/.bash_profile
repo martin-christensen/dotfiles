@@ -48,4 +48,10 @@ eval "$(thefuck --alias)"
 # pnpm
 export PNPM_HOME="/Users/martin/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
-# pnpm endexport PATH="/opt/homebrew/sbin:$PATH"
+# pnpm endexport
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/martin/google-cloud-sdk/path.bash.inc' ]; then . '/Users/martin/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/martin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/martin/google-cloud-sdk/completion.bash.inc'; fi

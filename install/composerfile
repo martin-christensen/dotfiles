@@ -1,4 +1,1 @@
-squizlabs/php_codesniffer=*
-friendsofphp/php-cs-fixer
-mglaman/drupal-check
-drupal/coder
+laravel/valet
