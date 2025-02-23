@@ -55,3 +55,9 @@ if [ -f '/Users/martin/google-cloud-sdk/path.bash.inc' ]; then . '/Users/martin/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/martin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/martin/google-cloud-sdk/completion.bash.inc'; fi
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[ -f /Users/martin/.config/.dart-cli-completion/bash-config.bash ] && . /Users/martin/.config/.dart-cli-completion/bash-config.bash || true
+## [/Completion]
+
