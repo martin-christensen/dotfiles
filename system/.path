@@ -25,7 +25,7 @@ prepend-path "$HOME/.config/composer/vendor/bin"
 prepend-path "/sbin"
 prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
-prepend-path "~/Projects/software/flutter/flutter"
+prepend-path "$HOME/Projects/software/flutter/flutter/bin"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755
