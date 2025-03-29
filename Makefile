@@ -92,9 +92,9 @@ cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile || true
 	defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
 	echo "Installing VS Codium extensions from open-vsx.org..."
-	for EXT in $$(cat install/Codefile); do codium --install-extension $$EXT --force; done
+	for EXT in $$(cat install/Codefile); do windsurf --install-extension $$EXT --force; done
 	echo "Installing VS Codium extensions from source..."
-	for EXT in $$(ls install/vscodium/extensions); do codium --install-extension install/vscodium/extensions/$$EXT --force; done
+	for EXT in $$(ls install/vscode/extensions); do windsurf --install-extension install/vscode/extensions/$$EXT --force; done
 	xattr -d -r com.apple.quarantine ~/Library/QuickLook
 
 macos-apps: brew

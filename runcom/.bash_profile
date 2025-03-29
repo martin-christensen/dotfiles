@@ -61,3 +61,6 @@ if [ -f '/Users/martin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/m
 [ -f /Users/martin/.config/.dart-cli-completion/bash-config.bash ] && . /Users/martin/.config/.dart-cli-completion/bash-config.bash || true
 ## [/Completion]
 
+
+# Added by Windsurf
+export PATH="/Users/martin/.codeium/windsurf/bin:$PATH"

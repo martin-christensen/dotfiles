@@ -33,8 +33,9 @@ cask "sourcetree"
 cask "spotify"
 cask "tableplus"
 cask "teamviewer"
-cask "vscodium"
+# cask "vscodium"
 cask "vlc"
+cask "windsurf"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 cask "qlcolorcode"

@@ -10,7 +10,8 @@ dockutil --no-restart --add "/Applications/Google Meet.app"
 dockutil --no-restart --add "/Applications/Microsoft Teams.app"
 dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/Firefox.app"
-dockutil --no-restart --add "/Applications/VSCodium.app"
+dockutil --no-restart --add "/Applications/Windsurf.app"
+# dockutil --no-restart --add "/Applications/VSCodium.app"
 dockutil --no-restart --add "/Applications/Sourcetree.app"
 dockutil --no-restart --add "/Applications/Sequel Ace.app"
 dockutil --no-restart --add "/Applications/TablePlus.app"
@@ -26,6 +27,7 @@ dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/Google Photos.app"
 dockutil --no-restart --add "/System/Applications/App Store.app"
 dockutil --no-restart --add "/System/Applications/System Settings.app"
+dockutil --no-restart --add "/Applications/Enpass.localized/Enpass.app"
 dockutil --no-restart --add "~/Downloads" --view grid --display folder --sort dateadded --section others
 
 killall Dock
