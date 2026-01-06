@@ -7,7 +7,7 @@
 
 [core]
 	excludesfile = ~/.config/git/ignore
-	editor = codium --wait
+	editor = windsurf --wait
 	filemode = false
 	trustctime = false
 	autocrlf = input
@@ -65,26 +65,20 @@
 [diff]
 	renames = copies
 	indentHeuristic = true
-	tool = Kaleidoscope
+  guitool = windsurf
 [difftool]
 	prompt = false
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool "sourcetree"]
-	cmd = ksdiff -w \"$LOCAL\" \"$REMOTE\"
-	path =
+[difftool "windsurf"]
+  cmd = windsurf --new-window --wait --diff "$LOCAL" "$REMOTE"
 
 [merge]
-	tool = Kaleidoscope
+	tool = windsurf
 	conflictstyle = diff3
 	defaultToUpstream = true
 [mergetool]
 	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool "sourcetree"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+[mergetool "windsurf"]
+  cmd = windsurf --merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 	trustExitCode = true
 
 [color]

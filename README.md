@@ -89,7 +89,7 @@ Usage: dot <command>
 Commands:
     clean            Clean up caches (brew, npm, gem, rvm)
     dock             Apply macOS Dock settings
-    edit             Open dotfiles in IDE (codium) and Git GUI (stree)
+    edit             Open dotfiles in IDE (windsurf) and Git GUI (stree)
     help             This help message
     macos            Apply macOS system defaults
     test             Run tests

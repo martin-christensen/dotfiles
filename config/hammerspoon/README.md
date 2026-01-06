@@ -12,9 +12,8 @@ The hyper key is defined as `⌘ + ⌥ + ⌃` (control + option + command). Pres
 | Key | App                |
 | --- | ------------------ |
 | C   | Google Chrome      |
-| E   | Editor (VSCodium)   |
+| E   | Editor (Windsurf)  |
 | F   | Finder             |
-| G   | SourceTree (Git)   |
 | M   | Mail               |
 | P   | System Preferences |
 | S   | Spotify            |
