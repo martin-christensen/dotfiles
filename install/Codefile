@@ -2,6 +2,7 @@ AmazonWebServices.aws-toolkit-vscode
 adpyke.codesnap
 amiralizadeh9480.laravel-extra-intellisense
 andrewdavidblum.drupal-smart-snippets
+anthropic.claude-code
 bmewburn.vscode-intelephense-client
 bradlc.vscode-tailwindcss
 carlocardella.vscode-filesystemtoolbox
@@ -17,6 +18,7 @@ felixfbecker.php-debug
 flowtype.flow-for-vscode
 formulahendry.auto-complete-tag
 github.vscode-pull-request-github
+golang.go
 graphql.vscode-graphql
 hediet.vscode-drawio
 ikappas.composer
@@ -47,3 +49,4 @@ ms-vscode.makefile-tools
 github.vscode-github-actions
 hashicorp.terraform
 yzhang.markdown-all-in-one
+mechatroner.rainbow-csv

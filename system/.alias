@@ -11,6 +11,11 @@ alias rsync="rsync -vh"
 alias json="json -c"
 alias psgrep="psgrep -i"
 
+# Claude
+# Comment out the use of fable, as it is to much beta
+alias claude-diwe='env XDG_CONFIG_HOME=$HOME/.config-claude-diwe CLAUDE_CONFIG_DIR=$HOME/.config-claude-diwe claude #--model claude-fable-5'
+alias claude-oda='env XDG_CONFIG_HOME=$HOME/.config-claude-oda CLAUDE_CONFIG_DIR=$HOME/.config-claude-oda claude #--model claude-fable-5'
+
 # Global aliases
 
 if $(is-supported "alias -g"); then
