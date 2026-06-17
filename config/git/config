@@ -7,7 +7,7 @@
 
 [core]
 	excludesfile = ~/.config/git/ignore
-	editor = windsurf --wait
+	editor = devin --wait
 	filemode = false
 	trustctime = false
 	autocrlf = input
@@ -65,20 +65,20 @@
 [diff]
 	renames = copies
 	indentHeuristic = true
-  guitool = windsurf
+  guitool = devin
 [difftool]
 	prompt = false
-[difftool "windsurf"]
-  cmd = windsurf --new-window --wait --diff "$LOCAL" "$REMOTE"
+[difftool "devin"]
+  cmd = devin --new-window --wait --diff "$LOCAL" "$REMOTE"
 
 [merge]
-	tool = windsurf
+	tool = devin
 	conflictstyle = diff3
 	defaultToUpstream = true
 [mergetool]
 	prompt = false
-[mergetool "windsurf"]
-  cmd = windsurf --merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+[mergetool "devin"]
+  cmd = devin --merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 	trustExitCode = true
 
 [color]

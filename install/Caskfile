@@ -28,7 +28,7 @@ cask "tableplus"
 cask "teamviewer"
 cask "unifi-identity-endpoint"
 cask "vlc"
-cask "windsurf"
+cask "devin-desktop"
 cask "wifiman"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)

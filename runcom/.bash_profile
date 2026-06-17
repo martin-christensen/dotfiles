@@ -62,5 +62,5 @@ if [ -f '/Users/martin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/m
 ## [/Completion]
 
 
-# Added by Windsurf
-export PATH="/Users/martin/.codeium/windsurf/bin:$PATH"
+# Added by Devin
+export PATH="/Users/martin/.codeium/devin/bin:$PATH"

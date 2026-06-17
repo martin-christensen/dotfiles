@@ -10,7 +10,7 @@ local function toggleApplication(name)
 end
 
 hs.hotkey.bind(mash, "c", function() toggleApplication("Google Chrome") end)
-hs.hotkey.bind(mash, "e", function() toggleApplication("Windsurf") end)
+hs.hotkey.bind(mash, "e", function() toggleApplication("Devin") end)
 hs.hotkey.bind(mash, "f", function() toggleApplication("Finder") end)
 hs.hotkey.bind(mash, "m", function() toggleApplication("Mail") end)
 hs.hotkey.bind(mash, "p", function() toggleApplication("System Preferences") end)

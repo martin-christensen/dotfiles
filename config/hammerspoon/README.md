@@ -12,7 +12,7 @@ The hyper key is defined as `⌘ + ⌥ + ⌃` (control + option + command). Pres
 | Key | App                |
 | --- | ------------------ |
 | C   | Google Chrome      |
-| E   | Editor (Windsurf)  |
+| E   | Editor (Devin).    |
 | F   | Finder             |
 | M   | Mail               |
 | P   | System Preferences |
