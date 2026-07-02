@@ -1,61 +1,61 @@
-tap "go-task/tap"
-tap "goles/battery"
-tap "leoafarias/fvm"
-tap "lotyp/homebrew-formulae"
+tap "go-task/tap", trusted: true
+tap "goles/battery", trusted: true
+tap "leoafarias/fvm", trusted: true
+tap "lotyp/formulae", trusted: true
 
-brew "awscli"
-brew "bat"
-brew "bats-core"
-brew "bfg"
-brew "coreutils"
-brew "croc"
-brew "composer"
-brew "diff-so-fancy"
-brew "difftastic"
-brew "direnv"
-brew "dnsmasq"
-brew "doctl"
-brew "dory"
-brew "lotyp/formulae/dockutil"
-brew "fd"
-brew "ffmpeg"
-brew "fnm"
-brew "fvm"
-brew "gnu-sed"
-brew "gh"
-brew "go"
-brew "goles/battery/battery"
-brew "grep"
-brew "grip"
-brew "httpie"
-brew "huggingface-cli"
-brew "imagemagick"
-brew "jq"
-brew "libpq"
-brew "llama.cpp"
-brew "mackup"
-brew "mas"
-brew "mysql-client", link: true
-brew "nano"
-brew "nginx"
-brew "oven-sh/bun/bun"
-brew "pandoc"
-brew "peco"
-brew "php"
-brew "psgrep"
-brew "python"
-brew "pwgen"
-brew "rust"
-brew "shellcheck"
-brew "ssh-copy-id"
-brew "stow"
-brew "terraform"
-brew "thefuck"
-brew "the_silver_searcher"
-brew "topgrade"
-brew "tree"
-brew "unar"
-brew "webp"
-brew "wget"
-brew "wimlib"
-brew "yq"
+brew "awscli", trusted: true
+brew "bat", trusted: true
+brew "bats-core", trusted: true
+brew "bfg", trusted: true
+brew "coreutils", trusted: true
+brew "croc", trusted: true
+brew "composer", trusted: true
+brew "diff-so-fancy", trusted: true
+brew "difftastic", trusted: true
+brew "direnv", trusted: true
+brew "dnsmasq", trusted: true
+brew "doctl", trusted: true
+brew "dory", trusted: true
+brew "lotyp/formulae/dockutil", trusted: true
+brew "fd", trusted: true
+brew "ffmpeg", trusted: true
+brew "fnm", trusted: true
+brew "fvm", trusted: true
+brew "gnu-sed", trusted: true
+brew "gh", trusted: true
+brew "go", trusted: true
+brew "goles/battery/battery", trusted: true
+brew "grep", trusted: true
+brew "grip", trusted: true
+brew "httpie", trusted: true
+brew "huggingface-cli", trusted: true
+brew "imagemagick", trusted: true
+brew "jq", trusted: true
+brew "libpq", trusted: true
+brew "llama.cpp", trusted: true
+brew "mackup", trusted: true
+brew "mas", trusted: true
+brew "mysql-client", link: true, trusted: true
+brew "nano", trusted: true
+brew "nginx", trusted: true
+brew "oven-sh/bun/bun", trusted: true
+brew "pandoc", trusted: true
+brew "peco", trusted: true
+brew "php", trusted: true
+brew "psgrep", trusted: true
+brew "python", trusted: true
+brew "pwgen", trusted: true
+brew "rust", trusted: true
+brew "shellcheck", trusted: true
+brew "ssh-copy-id", trusted: true
+brew "stow", trusted: true
+brew "terraform", trusted: true
+brew "thefuck", trusted: true
+brew "the_silver_searcher", trusted: true
+brew "topgrade", trusted: true
+brew "tree", trusted: true
+brew "unar", trusted: true
+brew "webp", trusted: true
+brew "wget", trusted: true
+brew "wimlib", trusted: true
+brew "yq", trusted: true

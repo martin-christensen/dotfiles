@@ -106,7 +106,7 @@ remote-dmg:
 	while read -r DMG; do DMG=$$(sed 's/#.*//' <<< $$DMG); if [[ ! -z "$$DMG" ]]; then install-dmg $$DMG; fi; done < install/remotedmgfile
 
 node-packages: npm
-	eval $$(fnm env); npm install -g $(shell cat install/npmfile)
+	eval $$(fnm env --use-on-cd --shell bash); npm install -g $(shell cat install/npmfile)
 
 rust-packages: rust
 	cargo install $(shell cat install/Rustfile)
@@ -115,4 +115,4 @@ composer-packages: composer
 	composer global require $(shell cat install/composerfile)
 
 test:
-	eval $$(fnm env); bats test
+	eval $$(fnm env --use-on-cd --shell bash); bats test
