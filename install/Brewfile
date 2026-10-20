@@ -16,6 +16,7 @@ brew "direnv", trusted: true
 brew "dnsmasq", trusted: true
 brew "doctl", trusted: true
 brew "dory", trusted: true
+brew "eas-cli", trusted: true
 brew "lotyp/formulae/dockutil", trusted: true
 brew "fd", trusted: true
 brew "ffmpeg", trusted: true

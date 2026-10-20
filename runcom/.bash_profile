@@ -64,3 +64,8 @@ if [ -f '/Users/martin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/m
 
 # Added by Devin
 export PATH="/Users/martin/.codeium/devin/bin:$PATH"
+
+# Android home
+export ANDROID_HOME="/Users/martin/Library/Android/sdk"
+export PATH="$ANDROID_HOME/emulator:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
